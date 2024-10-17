@@ -8,11 +8,11 @@ public class boj3107 {
         StringBuilder sb = new StringBuilder();
 
         String input = br.readLine();
+        if(input.endsWith(":")) input += "0";
 
         int count = 0;
         String temp = "";
 
-        if(input.endsWith(":")) input += "0";
         String[] strArray = input.split(":");
 
         for(String str: strArray) {
@@ -55,6 +55,5 @@ public class boj3107 {
         }
 
         System.out.println(answer.substring(0, answer.length()-1));
-
     }
 }
